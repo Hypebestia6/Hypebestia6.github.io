@@ -1,18 +1,238 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Document</title>
-        <style>
-            body {
-                background-color: slateblue;
-        </style>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Technikum</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="style.css">
     
-    <body>
-        <h1>KOCHAM CIE MAJA!!!</h1>
-        <img src="zdjecie.JPG" alt="ksiezyc" width="1280" height="720">
-        <a href="/download/java.js" download>Pobierz</a>
-        <h2>obiecuje ze bede cie kochac na zawsze maja daragcz. obiecuje ze nie zerwiemy.</h2>
-    </body>
-</html> 
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="head_wrap">
+        <header id="header">
+          <img src="/images/ti_transparent.png" alt="logo_ti" />
+          <div id="navbar">
+            <a href="#lang">Języki programowania</a>
+            <a href="#labs">Pracownie komputerowe</a>
+            <a href="#Examttl">Egzaminy</a>
+            <a href="#kadra_wrapper">Kadra</a>
+            <a href="#galeria">Galeria zdjęć</a>
+          </div>
+        </header>
+        <img id="photo1" src="/images/sala4_5.jpg" on>
+      </div>
+        <div id="langs">
+        <section id="lang">
+          <h1 id="progttl">Jakich języków <br> komputerowych się uczymy?</h1>
+        </section>
+        
+          <div id="progicon">
+            <div class="lang_container">
+              <img id="icon_0" class="icons" src="/images/html.png" alt="HTML" onmouseover="showDC(this.id)" onmouseout="hideDC(this.id)">
+              <span class="lang_dc">
+                <p>HTML to podstawowy element każdej strony internetowej. To w nim tworzymy różne elementy, które składają się na szkielet strony. </p>
+              </span>
+            </div>
+            <div class="lang_container">
+              <img id="icon_1" class="icons" src="/images/css.png" alt="css" onmouseover="showDC(this.id)" onmouseout="hideDC(this.id)">
+              <span class="lang_dc">
+                <p>CSS daje nam możliwość praktycznie dowolnej zmiany wyglądu elementów z naszego HTML. Elementy, takie jak np.: obrazy, tekst i tło  możemy dopasować do potrzeb naszej strony. Oprócz tego możemy także animować elementy na wiele sposobów.
+                </p>
+              </span>
+            </div>
+            <div class="lang_container">
+              <img id="icon_2" class="icons" src="/images/js.png" alt="js" onmouseover="showDC(this.id)" onmouseout="hideDC(this.id)">
+              <span id="lang_dc" class="lang_dc">
+                <p>Kiedy to CSS umożliwia nam wystylowanie strony, Javascript daje nam możliwość kontrolowania w jaki sposób strona sie zachowuje. Możemy ustalić co ma się dziać z elementami kiedy np.: najedziemy na niego myszką, naciśniemy, lub naciśniemy klawisz na klawiaturze.</p>
+              </span>
+            </div>
+            <div class="lang_container alt_lang" >
+              <img id="icon_3" class="icons" src="/images/php.png" alt="php" onmouseover="showDC(this.id)" onmouseout="hideDC(this.id)">
+              <span class="lang_dc">
+                <p>Język PHP służy do tworzenia dynamicznych stron www i aplikacji internetowych. Najczęściej pisane są w nim różne funkcjonalności, które przekształcają statyczne struktury w dynamiczne strony internetowe - takie, które mogą się zmieniać w czasie rzeczywistym, a wyświetlane treści są zależne od ich konfiguracji (np. ze względu na strefę czasową czy rodzaj przeglądarki).</p>
+              </span>
+            </div>
+            <div class="lang_container alt_lang" id="mariadb">
+              <img id="icon_4" class="icons" src="/images/mariadb.png" alt="mariadb" onmouseover="showDC(this.id)" onmouseout="hideDC(this.id)">
+              <span class="lang_dc">
+                <p>MariaDB Server to jedna z najpopularniejszych relacyjnych baz danych. Wykorzystuje się w niej język SQL (Structured Query Language). Jest to język programowania specjalnego przeznaczenia, służący do zarządzania dużymi ilościami danych i ich analizowania.</p>
+              </span>
+            </div>
+          </div>
+          </div>
+
+          <div class="sale">
+            <div id="labs">
+                <h1>Pracownie komputerowe</h1>
+            </div>
+            <div id="sala_wrapper">
+              <div class="sala_container"  >
+              <div class="photo_cont" onmouseover="showSala_DC(this.id)"
+              onmouseout="hideSala_DC(this.id)" id="sala_0">
+                <img class="photo_shadow_l" id="photo2" src="/images/sala_programowanie.jpg">
+                <div class="sala_opis">
+                  W tej sali prowadzone są zajęcia z tworzenia stron i witryn internetowych, programowania, projektowania i zarządzania bazami danych.
+                </div>
+              </div>
+                <p id="labs_p0">Sala 4</p>
+                
+              </div>
+              <div class="sala_container sala2">
+                <p id="labs_p0" class="p_right_side">Sala 6</p>
+              <div class="photo_cont" onmouseover="showSala_DC(this.id)"
+              onmouseout="hideSala_DC(this.id)" id="sala_1">
+                <img class="photo_shadow_p" id="photo2" src="/images/sala_aso.jpg">
+                <div class="sala_opis">
+                  Tutaj uczymy się o systemach operacyjnych i zarządzaniu nimi. Poznasz tutaj Systemy: Windows, Windows Server, Linux i Linux server z dystrybucji OpenSuse.
+                </div>
+              </div>
+              </div>
+              <div class="sala_container">
+                <div class="photo_cont" onmouseover="showSala_DC(this.id)"
+                onmouseout="hideSala_DC(this.id)" id="sala_2">
+                  <img class="photo_shadow_l" id="photo2" src="/images/sala_sieci.jpg">
+                  <div class="sala_opis">
+                    Ulubiona Sala każdego ucznia! Tutaj pracujemy z stacją roboczą i serwerem, poza tym do dyspozycji mamy również urządzenia siecowe. W tej sali dowiesz się jak konfigurować sieci komputerowe, od zarabiania kabli i gniazd do konfigurowania urządzeń siecowych. 
+                  </div>
+                </div>
+                <p id="labs_p0">Sala 7</p>
+                
+              </div>
+              <div class="sala_container sala2">
+                <p id="labs_p0">Sala 8</p>
+                <div class="photo_cont" onmouseover="showSala_DC(this.id)" onmouseout="hideSala_DC(this.id)" id="sala_3">
+                  <img class="photo_shadow_p" id="photo2" src="/images/sala_utk.jpg">
+                  <div class="sala_opis">
+                    W tej sali będziesz uczył się jak składać zestawy komputerowe fizycznie, ale również jak dobierać podzespoły dla potrzeb swoich klientów.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div id="exttlwrapper">
+          <h1 id="Examttl">Egzaminy</h1>
+          <div class="egzamin_container" id="exam_0" onmouseover="showEX_DC(this.id)" onmouseout="hideEX_DC(this.id)">
+            <h1>INF.02</h1>
+            <img src="/images/kabelki.jpg" alt="INF_02" class="egzaminyzd" id="EXAMPHOTO_0">
+            <div class="exdc" >INF.02. – Administracja i eksploatacja systemów komputerowych, urządzenia peryferyjne i lokalne sieci komputerowe</div>
+          </div> 
+          <div class="egzamin_container" id="exam_1" onmouseover="showEX_DC(this.id)" onmouseout="hideEX_DC(this.id)">
+            <h1>INF.03</h1>
+            <img src="/images/programowanie.jpg" alt="INF_03" class="egzaminyzd" id="EXAMPHOTO_1">
+            <div class="exdc">INF.03. – Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych.</div>
+          </div>
+        </div>
+          <hr>
+          <div id="kadra_wrapper">
+            <h1 id="kadrattl" >Kadra nauczycielska</h1>
+            <div class="kadra_container">
+              <div class="belfer belf_0" id="belf_0" onmouseover="showB_DC(this.id)" onmouseout="hideB_DC(this.id)">
+                <h1>Krystian Formella</h1>
+                <!-- <img src="/images/kformela.png" alt="Wicedyrektor - Krystian Formella"> -->
+                <div class="bel_opis">
+                    <p>Wicedyrektor Technikum</p>
+                    Absolwent Wydziału Fizyki Technicznej i Matematyki Stosowanej Politechniki Gdańskiej na kierunku matematyka o specjalnościach biomatematyka i bioinformatyka. Interesuje się zastosowaniem matematyki w medycynie, w szczególności przewidywaniem rozwoju chorób i epidemii.
+                </div>
+              </div>
+              <div class="belfer belf_1" id="belf_1" onmouseover="showB_DC(this.id)" onmouseout="hideB_DC(this.id)">
+                <h1>Małgorzata Oberzig</h1>
+                
+                <div class="bel_opis">
+                  <p>Dyrektor Technikum</p>
+                    Ukończyła studia wyższe na Wydziale Matematyki Pomorskiej Akademii Pedagogicznej w Słupsku. Od wielu lat jest egzaminatorem Okręgowej Komisji Egzaminacyjnej. Matematyka to jej wielka pasja i fascynacja. Uwielbia uczyć, mogłaby godzinami tłumaczyć uczniom trudne zadania. Najbardziej cieszy ją to, że wielu wychowanków studiuje, bądź już ukończyło studia związane z matematyką. Mimo że praca nauczyciela jest bardzo ciężka nie zamieniłaby jej na żadną inną.
+                </div>
+              </div>
+              <div class="belfer belf_2" id="belf_2" onmouseover="showB_DC(this.id)" onmouseout="hideB_DC(this.id)">
+                <h1>Natalia Formella</h1>
+                
+                <div class="bel_opis">
+                  <p>Nauczyciel programowania i baz danych</p>
+                  Absolwentka informatyki na Wydziale Elektroniki, Telekomunikacji i Informatyki Politechniki Gdańskiej. Jej zainteresowania zawodowe skupiają się wokół inżynierii danych i tworzenia gier komputerowych.
+                </div>
+              </div>
+              <div class="belfer belf_3" id="belf_3" onmouseover="showB_DC(this.id)" onmouseout="hideB_DC(this.id)">
+                <h1>Roman Meina</h1>
+                
+                <div class="bel_opis">
+                  <p>Nauczyciel systemów operacyjnych i sieci</p>
+                  Absolwent fizyki Wyższej Szkoły Pedagogicznej w Słupsku. W trakcie studiów zdobył uprawnienia do nauczania informatyki w szkołach ogólnokształcących i zawodowych. Trener szkoleń informatycznych. Wieloletni pracownik sektora IT branży korporacyjnej.
+                </div>
+              </div>
+              <div class="belfer belf_4" id="belf_4" onmouseover="showB_DC(this.id)" onmouseout="hideB_DC(this.id)">
+                <h1>Marcin Selke</h1>
+                
+                <div class="bel_opis">
+                  <p>Nauczyciel urządzeń technik komputerowych</p>
+                  Absolwent Akademii Pomorskiej w Słupsku, gdzie ukończył z wyróżnieniem studia magisterskie na kierunku Filologia Polska (nauczycielska). W trakcie dalszych studiów na Uniwersytecie Gdańskim zdobył uprawnienia do nauczania przedmiotów informatycznych na wszystkich poziomach kształcenia. Prywatnie fan Sherlocka Holmesa, miłośnik literatury kryminalnej, muzyki elektronicznej i rozrywki typu escape room. Interesuje się też tematyką IT, a w szczególności sferą hardware.
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          
+          <div class="swiper">
+            <h1 id="galeria">Galeria zdjęć</h1>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><h1>Dzień Idola!</h1></div>
+              <div class="swiper-slide"><h1>Liczne szkolne wyjazdy</h1></div>
+              <div class="swiper-slide"><h1>Escape room "EXAM GAME" >>></h1></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"><h1>Projekt "Uranium" >>></h1></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"><h1>Święta w Technikum</h1></div>
+              <div class="swiper-slide"><h1>Osiągnięcia szkoły</h1></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div>
+            <footer>
+              <img src="/images/ti_navy.png"> 
+              <p id="footer_para">Realizacja: uczniowie klasy 3TI</p>
+            </footer>
+          </div>
+    </div>     
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="/scripts/proglng.js"></script>
+   <script src="/scripts/belf_opis.js"></script>
+   <script src="/scripts/egzaminy_opis.js"></script>
+   <script src="/scripts/sale_opis.js"></script>
+   <script src="/scripts/linki.js"></script>
+   <script src="/scripts/navbar.js"></script>
+   <script>
+    var swiper = new Swiper(".swiper", {
+      effect: 'coverflow',
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      loop: true,
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 2,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+      },
+  });
+
+  var slides = document.getElementsByClassName('swiper-slide')
+  var slidesArray = [...slides]
+  //! Tutaj dodajemy zdjęcia do wyświetlenia w galerii, ale trzeba pamiętać żeby tez dodać obiekt swiper-slide!!!
+  var backgrounds = ['url(images/choinka.jpg)' , 'url(images/nagroda.jpg)' , 'url(images/cosplay.jpg)' , 'url(images/milionerzy.jpg)', 'url(images/exam1.png)', 'url(images/exam2.png)', 'url(images/exam3.png)', 'url(images/exam4.png)', 'url(images/uranium1.png)', 'url(images/uranium2.jpg)', 'url(images/uranium3.jpg)']
+
+  slidesArray.forEach(e => {
+    e.style.backgroundImage = backgrounds[slidesArray.indexOf(e)]
+  })
+  console.log(slidesArray)
+   </script>
+  </body>
+</html>
